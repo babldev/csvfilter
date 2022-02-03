@@ -81,7 +81,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    filters: List[Filter]
+    filters: List[Filter] = []
     for filter_str in args.filters:
         parsed_filter = parse_filter(filter_str)
         if parsed_filter:
